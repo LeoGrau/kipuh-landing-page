@@ -1,0 +1,7 @@
+.purchase {
+  background-color: var(--ducky-yellow);
+  border: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+
+}

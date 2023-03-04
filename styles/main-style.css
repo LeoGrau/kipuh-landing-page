@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Nabla&display=swap");
+@import "../styles/card.css";
+@import "../styles/button.css";
+
 :root {
   --ducky-yellow: #ffc700;
   --red-rose: #f46464;
@@ -10,6 +13,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Dosis", cursive;
+}
+
+ul {
+  list-style: none;
 }
 
 nav {
@@ -89,4 +96,9 @@ main .title {
 
 .kipuh-logo {
   width: 100px;
+}
+
+#pricing {
+  background: radial-gradient(39.57% 78.7% at 50% 50%, #FA9B00 0%, #FFDF6C 32.29%, #F46464 100%);
+  height: 100vh;
 }

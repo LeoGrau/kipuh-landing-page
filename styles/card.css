@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.dark {
+  color: white;
+  background-color: black;
+}
+
+.light {
+  color: black;
+  background-color: white;
+}
+
+.check {
+  width: 15px;
+  height: 25px;
+  position: relative;
+}
+
+.check .bi.bi-check-circle-fill {
+  color: rgb(0, 190, 0);
+  font-size: 18px;
+}
+
+.check .circle {
+  width: 12px;
+  height: 12px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+

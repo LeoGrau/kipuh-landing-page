@@ -13,13 +13,15 @@
 </head>
 
 <body>
-  <nav class="flex justify-content-between align-items-center px-4">
+  <nav id="navbar" class="flex fixed top-0 z-3 justify-content-between align-items-center px-4 w-full">
+    <div class="md:hidden" id="side-nav-bar"></div>
     <ul class="hidden md:flex justify-content-center gap-3">
-      <li class="font-bold"><a href="" class="text-black-alpha-90 text-lg">Pricing</a></li>
-      <li class="font-bold"><a href="" class="text-black-alpha-90 text-lg">About</a></li>
-      <li class="font-bold"><a href="" class="text-black-alpha-90 text-lg">Contact</a></li>
+      <li class="font-bold"><a href="" class="text-lg">Pricing</a></li>
+      <li class="font-bold"><a href="" class="text-lg">About</a></li>
+      <li class="font-bold"><a href="" class="text-lg">Contact</a></li>
     </ul>
-    <img class="kipuh-logo lg:w-8rem" src="./assets/Kipuh!.svg" alt="">
+    <img class="hidden kipuh-logo lg:w-8rem" src="./assets/Kipuh!.svg" alt="">
+    <h1 class="kipuh-logo">Kipuh!</h1>
     <div class="hidden md:flex gap-2">
       <button class="btn h-max px-5 py-2" type="button">
         <p class="font-bold text-base">Log In</p>
@@ -30,20 +32,23 @@
     </div>
     <button class="btn invisible md:hidden"><i class="bi bi-list" style="font-size: 30px;"></i></button>
   </nav>
-  <main class="flex justify-content-center align-items-center relative md:p-4">
-    <div class="md:hidden w-full h-full absolute z-1 bg-black-alpha-70"></div>
-    <img class="md:hidden bg-image absolute z-0" src="./assets/girl-buying.jpg" alt="">
-    <div class="flex justify-content-center align-items-center w-9 absolute z-2 text-white md:text-color"
-      style="max-width: 1028px;">
-      <div class="flex flex-column align-items-center md:align-items-start w-12 md:w-6 gap-2 text-center">
-        <p class="md:block">Made by <span class="cartoon-font">NastyPad</span></p>
-        <h1 class="text-6xl md:text-left lg:text-left lg:text-6xl xl:text-7xl">Take control of your business easily and
-          efficiently</h1>
-        <button class="btn bg-gray-900 text-white text-base w-fit px-4 py-2">Wanna try?</button>
-      </div>
-      <div class="hidden md:block w-6 relative" style="aspect-ratio: 1;">
-        <div class="hexagon absolute"></div>
-        <div class="bg-image"></div>
+  <main class="flex">
+    <div class="flex justify-content-center align-items-center relative w-full" style="transform: translateY(90px); height: calc(100vh - 90px)">
+      <div class="md:hidden w-full h-full absolute z-1 bg-black-alpha-70"></div>
+      <img class="md:hidden bg-image absolute z-0" src="./assets/girl-buying.jpg" alt="">
+      <div class="flex justify-content-start align-items-center w-9 absolute z-2 text-white md:text-color"
+        style="max-width: 1028px;">
+        <div class="flex flex-column align-items-center md:align-items-start w-12 md:w-6 gap-2 text-center">
+          <p class="md:block">Made by <span class="cartoon-font">NastyPad</span></p>
+          <h1 class="text-6xl md:text-left lg:text-left lg:text-6xl xl:text-7xl">Take control of your business easily
+            and
+            efficiently</h1>
+          <button class="btn bg-gray-900 text-white text-base w-fit px-4 py-2">Wanna try?</button>
+        </div>
+        <div class="hidden md:block w-6 relative" style="aspect-ratio: 1;">
+          <div class="hexagon absolute"></div>
+          <div class="bg-image"></div>
+        </div>
       </div>
     </div>
   </main>
@@ -51,91 +56,102 @@
     <div class="flex flex-column align-items-center">
       <h1 class="pb-4 pt-3 text-5xl">Pricing</h1>
       <p class="pb-6">Select the plan that best suits you. </p>
-      <div class="grid gap-7 justify-content-center">
-        <div class="card light p-4 flex flex-column justify-content-between align-items-center">
+      <div class="grid gap-7 justify-content-center w-full">
+        <div class="card light p-4 flex flex-column justify-content-between">
           <div class="flex flex-column">
             <div class="flex justify-content-center align-items-center gap-2 pb-5">
               <h2 class="text-center text-4xl">Free Plan</h2>
             </div>
-            <ul class="flex flex-column gap-4">
+            <ul class="flex flex-column align-items-start gap-4">
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>Free, accessible and affordable
+                </div>
+                <p>Free, accessible and affordable</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>1 administrator.
+                </div>
+                <p>1 administrator.</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>20 available spaces to add new products.
+                </div>
+                <p>20 available spaces to add new products.</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>Sales and products statistics.
+                </div>
+                <p>Sales and products statistics.</p>
               </li>
             </ul>
           </div>
           <button class="purchase"> > Purchase Now! </button>
         </div>
-        <div class="card dark p-4 flex flex-column justify-content-between align-items-center">
+        <div class="card dark p-4 flex flex-column justify-content-between">
           <div class="flex flex-column">
-            <div class="flex justify-content-center align-items-center gap-2 pb-5"><img src="./assets/vip-ticket.svg"
-                alt="">
+            <div class="flex justify-content-center align-items-center gap-2 pb-5">
+              <img src="./assets/vip-ticket.svg" alt="">
               <h2 class="text-center text-4xl">Plan</h2>
             </div>
-            <ul class="flex flex-column gap-4">
+            <ul class="flex flex-column align-items-start gap-4">
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>Accessible and cheap monthly cost for 30.99$
+                </div>
+                <p>Accessible and cheap monthly cost for 30.99$</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>Unlimited administrator and
-                shopkeepers.
+                </div>
+                <p>Unlimited administrator and
+                  shopkeepers.</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>Unlimited available spaces to add new products.
+                </div>
+                <p>Unlimited available spaces to add new products.</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>Sales and products statistics.
+                </div>
+                <p>Sales and products statistics.</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>See the storage of other premises owned by the company.
+                </div>
+                <p>See the storage of other premises owned by the company.</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>Custom and preferential attendance support.
+                </div>
+                <p>Custom and preferential attendance support.</p>
               </li>
               <li class="flex align-items-center gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
-                </div>User’s GUI customization.
+                </div>
+                <p>User’s GUI customization.</p>
               </li>
             </ul>
           </div>
           <button class="purchase"> > Purchase Now! </button>
         </div>
-        <div class="card light p-4 flex flex-column justify-content-between align-items-center">
+        <div class="card light p-4 flex flex-column justify-content-between">
           <div class="flex flex-column">
             <div class="flex justify-content-center align-items-center gap-2 pb-5">
               <h2 class="text-center text-4xl">Save Plan</h2>
             </div>
             <ul class="flex flex-column gap-4">
-              <li class="flex align-items-center gap-2">
+              <li class="flex align-items-start gap-2">
                 <div class="check relative flex justify-content-center align-items-center">
                   <div class="circle bg-white absolute"></div> <i class="bi bi-check-circle-fill absolute"></i>
                 </div>Accessible and cheap monthly cost for 19.99$
@@ -165,5 +181,6 @@
     </div>
   </section>
 </body>
+<script src="./scripts/nav.js"></script>
 
 </html>

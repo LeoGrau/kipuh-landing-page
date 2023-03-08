@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Nabla&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fredoka+One&family=Nabla&display=swap');
 @import "../styles/card.css";
 @import "../styles/button.css";
 @import "../styles/own.css";
 @import "../styles/hexagon.css";
+@import "../styles/nav.css";
 
 :root {
   --ducky-yellow: #ffc700;
@@ -28,7 +29,7 @@ nav {
 }
 
 main {
-  height: calc(100vh - 90px);
+  height: 100vh;
 }
 
 #pricing {

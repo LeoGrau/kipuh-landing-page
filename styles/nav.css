@@ -1,0 +1,17 @@
+.scrolledY {
+  background-color: black;
+  transition: all 0.2s ease-in;
+}
+
+.scrolledY ul li a, .scrolledY .kipuh-logo {
+  color: white;
+}
+
+.not-scrolledY {
+  background-color: transparent;
+  transition: all 0.2s ease-in;
+}
+
+.not-scrolledY ul li a, .not-scrolledY .kipuh-logo {
+  color: black;
+}

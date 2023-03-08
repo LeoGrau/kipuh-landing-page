@@ -1,10 +1,10 @@
 .card {
   position: relative;
   border-radius: 10px;
-  height: 570px;
-  max-width: 350px;
-  min-width: 310px;
-  width: 350px;
+  min-width: 350px;
+  max-width: 420px;
+  height: 610px;
+  width: 33%;
 }
 
 .dark {

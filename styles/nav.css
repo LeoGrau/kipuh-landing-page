@@ -3,7 +3,10 @@
   transition: all 0.2s ease-in;
 }
 
-.scrolledY ul li a, .scrolledY .kipuh-logo {
+.scrolledY ul li a,
+.scrolledY ul li a:active,
+.scrolledY ul li a:link,
+ .scrolledY .kipuh-logo {
   color: white;
 }
 
@@ -12,6 +15,9 @@
   transition: all 0.2s ease-in;
 }
 
-.not-scrolledY ul li a, .not-scrolledY .kipuh-logo {
+.not-scrolledY ul li a,
+.not-scrolledY ul li a:active,
+.not-scrolledY ul li a:link,
+.not-scrolledY .kipuh-logo {
   color: black;
 }

@@ -6,3 +6,7 @@
   font-size: 1rem;
   font-weight: bold;
 }
+
+.invisible {
+  background-color: transparent;
+}

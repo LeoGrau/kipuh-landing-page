@@ -1,6 +1,7 @@
 /* Hexagon */
 .hexagon {
-  transform: translate(5%, 5%);
+  transform: translate(20px, 20px);
+  aspect-ratio: 1;
   background-color: var(--light-orange);
   clip-path: polygon(
     50% 0%,

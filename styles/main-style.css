@@ -71,8 +71,7 @@ main .title {
 }
 
 
-.background-image {
-  max-width: 490px;
+.bg-image {
   background-image: url("../assets/girl-buying.jpg");
   aspect-ratio: 1;
   background-size: 150%;
@@ -95,6 +94,15 @@ main .title {
 
 
 /* Queries */
+@media (min-width: 0) {
+  img.bg-image {
+    background-image: none;
+    object-fit: cover;
+    height: calc(100vh - 90px);
+    width: 100%;
+    clip-path: none;
+  }
+}
 @media (min-width: 576px) {
   
 }

@@ -2,8 +2,9 @@
   position: relative;
   border-radius: 10px;
   height: 570px;
-  max-width: 400px;
+  max-width: 350px;
   min-width: 310px;
+  width: 350px;
 }
 
 .dark {

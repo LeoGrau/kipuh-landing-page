@@ -12,10 +12,22 @@
   <title>Kipuh! | Shopkeeping hasn't been so easy until now.</title>
 </head>
 
-<body>
+<body class="relative">
   <nav id="navbar" class="flex fixed top-0 z-3 justify-content-between align-items-center px-4 w-full not-scrolledY">
-    <div class="md:hidden" id="side-nav-bar">
-      
+    <div class="md:hidden absolute top-0 right-0 not-scrolledY" id="side-navbar">
+      <div class="flex flex-column p-4">
+        <div class="flex align-items-center justify-content-between">
+          <h1 class="kipuh-logo text-3xl">Kipuh!</h1>
+          <i id="closeSideNav" class="bi bi-x text-6xl cursor-pointer"></i>
+        </div>
+        <hr>
+        <ul class="flex flex-column justify-content-center gap-3 mt-3">
+          <li class="font-bold"><a href="" class="text-lg">Sign Up</a></li>
+          <li class="font-bold"><a href="" class="text-lg">Pricing</a></li>
+          <li class="font-bold"><a href="" class="text-lg">About</a></li>
+          <li class="font-bold"><a href="" class="text-lg">Contact</a></li>
+        </ul>
+      </div>
     </div>
     <ul class="hidden md:flex justify-content-center gap-3">
       <li class="font-bold"><a href="" class="text-lg">Pricing</a></li>
@@ -32,7 +44,7 @@
         <p class="font-bold text-base">Sign Up</p>
       </button>
     </div>
-    <button class="btn invisible md:hidden menu"><i class="bi bi-list" style="font-size: 30px;"></i></button>
+    <button id="openSideNav" class="btn invisible md:hidden menu cursor-pointer"><i class="bi bi-list" style="font-size: 30px;"></i></button>
   </nav>
   <main class="flex">
     <div class="flex justify-content-center align-items-center relative w-full" style="transform: translateY(90px); height: calc(100vh - 90px)">

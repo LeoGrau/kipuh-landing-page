@@ -1,3 +1,7 @@
+button {
+  cursor: pointer;
+}
+
 .purchase {
   background-color: var(--ducky-yellow);
   border: none;
@@ -5,9 +9,13 @@
   padding: 8px 14px;
   font-size: 1rem;
   font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.purchase:hover {
+  background-color: var(--ducky-yellow-light);
 }
 
 .invisible {
   background-color: transparent;
 }
-

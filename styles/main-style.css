@@ -7,8 +7,10 @@
 
 :root {
   --ducky-yellow: #ffc700;
+  --ducky-yellow-light: #fcd650;
   --red-rose: #f46464;
   --light-orange: #fcd088;
+  --elegant-gray: rgb(22, 22, 22);
   --p-medium: 18px;
 }
 
@@ -92,6 +94,11 @@ main .title {
 
 #pricing p {
   font-size: var(--p-medium);
+}
+
+
+footer {
+  background-color: var(--elegant-gray);
 }
 
 

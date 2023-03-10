@@ -3,11 +3,8 @@
 @import "../styles/button.css";
 @import "../styles/own.css";
 @import "../styles/hexagon.css";
-<<<<<<< HEAD
-@import "../styles/footer.css";
-=======
 @import "../styles/nav.css";
->>>>>>> 47fa8b76d4b42da9e96a3597a0fd3ebb17b59bc8
+@import "../styles/footer.css";
 
 :root {
   --ducky-yellow: #ffc700;

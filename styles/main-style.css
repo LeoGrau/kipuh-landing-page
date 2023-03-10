@@ -1,14 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Nabla&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fredoka+One&family=Nabla&display=swap');
 @import "../styles/card.css";
 @import "../styles/button.css";
 @import "../styles/own.css";
 @import "../styles/hexagon.css";
+<<<<<<< HEAD
 @import "../styles/footer.css";
+=======
+@import "../styles/nav.css";
+>>>>>>> 47fa8b76d4b42da9e96a3597a0fd3ebb17b59bc8
 
 :root {
   --ducky-yellow: #ffc700;
+  --ducky-yellow-light: #fcd650;
   --red-rose: #f46464;
   --light-orange: #fcd088;
+  --elegant-gray: rgb(22, 22, 22);
   --p-medium: 18px;
 }
 
@@ -29,7 +35,7 @@ nav {
 }
 
 main {
-  height: calc(100vh - 90px);
+  height: 100vh;
 }
 
 #pricing {
@@ -44,6 +50,7 @@ main {
 a {
   text-decoration: none;
 }
+
 
 nav ul li {
   list-style: none;
@@ -91,6 +98,11 @@ main .title {
 
 #pricing p {
   font-size: var(--p-medium);
+}
+
+
+footer {
+  background-color: var(--elegant-gray);
 }
 
 

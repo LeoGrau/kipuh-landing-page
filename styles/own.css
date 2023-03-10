@@ -3,5 +3,10 @@
 }
 
 .kipuh-logo {
-  width: 100px;
+  font-size: 3rem;
+  font-family: "Fredoka One", cursive;
+}
+
+.text-black {
+  color: black
 }

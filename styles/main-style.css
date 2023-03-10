@@ -3,6 +3,7 @@
 @import "../styles/button.css";
 @import "../styles/own.css";
 @import "../styles/hexagon.css";
+@import "../styles/footer.css";
 
 :root {
   --ducky-yellow: #ffc700;
